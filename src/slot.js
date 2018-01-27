@@ -21,30 +21,3 @@ Slot.prototype.render = function(props, state) {
 	let child = props.children[0];
 	return typeof child==='function' ? child(state.content) : (state.content || child);
 };
-
-
-// export class Slot extends Component {
-// 	constructor(p, c) {
-// 		super(p, c);
-// 		this.update = () => {
-// 			let content = this.context.slots.named[this.props.name];
-// 			if (content!=this.state.content) {
-// 				this.setState({ content });
-// 			}
-// 		};
-// 		this.update();
-// 	}
-
-// 	componentDidMount() {
-// 		this.context.slots.onChange.push(this.update);
-// 	}
-
-// 	componentWillUnmount() {
-// 		this.context.slots.onChange.push(this.update);
-// 	}
-
-// 	render(props, state) {
-// 		let child = props.children[0];
-// 		return typeof child==='function' ? child(state.content) : (state.content || child);
-// 	}
-// }
