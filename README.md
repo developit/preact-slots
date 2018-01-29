@@ -1,5 +1,5 @@
 <div align="center">
-	<img align="center" src="https://i.imgur.com/7Vk9bvq.jpg" width="1650">
+	<img align="center" src="https://i.imgur.com/8b1gCrF.jpg" width="1650">
 </div>
 
 # preact-slots [![npm](https://img.shields.io/npm/v/preact-slots.svg?style=flat)](https://www.npmjs.org/package/preact-slots) [![travis](https://travis-ci.org/developit/preact-slots.svg?branch=master)](https://travis-ci.org/developit/preact-slots)
