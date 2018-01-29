@@ -4,6 +4,8 @@
 
 # preact-slots [![npm](https://img.shields.io/npm/v/preact-slots.svg?style=flat)](https://www.npmjs.org/package/preact-slots) [![travis](https://travis-ci.org/developit/preact-slots.svg?branch=master)](https://travis-ci.org/developit/preact-slots)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/preact-slots.svg)](https://greenkeeper.io/)
+
 Render Preact trees into other Preact trees, like portals.
 
 
