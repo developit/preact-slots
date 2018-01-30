@@ -78,7 +78,7 @@ render(
 
 Slots are a concept that has been around for a while.
 
-In particular, @camwest's [react-slot-fill](https://github.com/camwest/react-slot-fill) is similar to preact-slots, but geared towards React.
+In particular, [@camwest](https://github.com/camwest)'s [react-slot-fill](https://github.com/camwest/react-slot-fill) is similar to preact-slots, but geared towards React.
 
 
 ### License
