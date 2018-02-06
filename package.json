@@ -37,7 +37,7 @@
     "karmatic": "^1.0.6",
     "microbundle": "^0.4.3",
     "preact": "^8.2.7",
-    "preact-context-provider": "^1.0.0"
+    "preact-context-provider": "1.0.0"
   },
   "peerDependencies": {
     "preact": "*"
