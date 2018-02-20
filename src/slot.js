@@ -20,5 +20,5 @@ export function Slot(props, context) {
 (Slot.prototype = new Component()).constructor = Slot;
 Slot.prototype.render = function(props, { content = {} }) {
 	let child = props.children[0];
-	return typeof child==='function' ? child(content[props.name]) : (content[props.name][0]) || child;
+	return typeof child==='function' ? child(content[props.name]) : (content[props.name] && content[props.name][0]) || child;
 };
