@@ -14,7 +14,7 @@ describe('SlotProvider', () => {
 		expect(Spy).toHaveBeenCalledWith(jasmine.any(Object), {
 			slots: {
 				named: {},
-				onChange: []
+				onChange: {}
 			}
 		});
 	});

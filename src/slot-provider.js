@@ -3,7 +3,7 @@ export class SlotProvider {
 		return {
 			slots: {
 				named: {},
-				onChange: []
+				onChange: {}
 			}
 		};
 	}
