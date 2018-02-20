@@ -18,9 +18,9 @@ describe('Slot', () => {
 		expect(Spy).toHaveBeenCalledWith(jasmine.any(Object), {
 			slots: {
 				named: {
-					foo: 'bar'
+					foo: ['bar']
 				},
-				onChange: []
+				onChange: {}
 			}
 		});
 	});

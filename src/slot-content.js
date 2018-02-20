@@ -4,24 +4,25 @@ export class SlotContent {
 		if (slot) {
 			slots.named[slot] = content;
 			if (fireChange) {
-				for (let i=0; i<slots.onChange.length; i++) {
-					slots.onChange[i]();
+				let update = slots.onChange[slot]
+				if (update) {
+					update();
 				}
 			}
 		}
 	}
 
-	componentWillMount() {
-		this.apply(this.props.slot, this.props.children[0], true);
+	componentDidMount() {
+		this.apply(this.props.slot, this.props.children, true);
 	}
 
 	componentWillReceiveProps({ slot, children }) {
 		if (slot!==this.props.slot) {
 			this.apply(this.props.slot, null, false);
-			this.apply(slot, children[0], true);
+			this.apply(slot, children, true);
 		}
-		else if (children[0]!==this.props.children[0]) {
-			this.apply(slot, children[0], true);
+		else if (children!==this.props.children) {
+			this.apply(slot, children, true);
 		}
 	}
 

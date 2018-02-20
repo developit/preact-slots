@@ -25,7 +25,7 @@ describe('Slot', () => {
 			named: {
 				foo: 'bar'
 			},
-			onChange: []
+			onChange: {}
 		};
 
 		render((
@@ -43,7 +43,7 @@ describe('Slot', () => {
 
 		const slots = {
 			named: {},
-			onChange: []
+			onChange: {}
 		};
 
 		render((
@@ -52,13 +52,13 @@ describe('Slot', () => {
 			</Provider>
 		), document.createElement('x-root'));
 
-		expect(slots.onChange).toContain(jasmine.any(Function));
+		expect(slots.onChange.foo).toEqual(jasmine.any(Function));
 
 		expect(spy).toHaveBeenCalledTimes(1);
 		expect(spy).toHaveBeenCalledWith(undefined);
 
 		slots.named.foo = 'bar';
-		slots.onChange[0]();
+		slots.onChange['foo']();
 		await tick();
 
 		expect(spy).toHaveBeenCalledTimes(2);
@@ -72,7 +72,7 @@ describe('Slot', () => {
 			named: {
 				foo: 'bar'
 			},
-			onChange: []
+			onChange: {}
 		};
 
 		render((
@@ -84,7 +84,7 @@ describe('Slot', () => {
 		expect(spy).toHaveBeenCalledTimes(1);
 		expect(spy).toHaveBeenCalledWith('bar');
 
-		slots.onChange[0]();
+		slots.onChange['foo']();
 		await tick();
 
 		expect(spy).toHaveBeenCalledTimes(1);

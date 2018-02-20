@@ -12,7 +12,7 @@ describe('withSlot()', () => {
 			named: {
 				foo: 'bar'
 			},
-			onChange: []
+			onChange: {}
 		};
 
 		const Child = withSlot('foo')(Spy);
@@ -32,7 +32,7 @@ describe('withSlot()', () => {
 
 		const slots = {
 			named: {},
-			onChange: []
+			onChange: {}
 		};
 
 		const Child = withSlot('foo')(Spy);
@@ -46,10 +46,10 @@ describe('withSlot()', () => {
 		expect(Spy).toHaveBeenCalledTimes(1);
 		expect(Spy).toHaveBeenCalledWith({ foo: undefined, children: [] }, jasmine.anything());
 
-		expect(slots.onChange).toContain(jasmine.any(Function));
+		expect(slots.onChange.foo).toEqual(jasmine.any(Function));
 
 		slots.named.foo = 'bar';
-		slots.onChange[0]();
+		slots.onChange['foo']();
 		await tick();
 
 		expect(Spy).toHaveBeenCalledTimes(2);
