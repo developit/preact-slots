@@ -35,7 +35,7 @@
     "eslint": "^4.16.0",
     "eslint-config-developit": "^1.1.1",
     "karmatic": "^1.0.6",
-    "microbundle": "^0.4.3",
+    "microbundle": "^0.4.5",
     "preact": "^8.2.7",
     "preact-context-provider": "^1.0.0"
   },
