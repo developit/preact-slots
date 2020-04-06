@@ -33,7 +33,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^4.16.0",
-    "eslint-config-developit": "^1.1.1",
+    "eslint-config-developit": "^1.2.0",
     "karmatic": "^1.0.6",
     "microbundle": "^0.4.3",
     "preact": "^8.2.7",
